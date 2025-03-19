@@ -1,0 +1,14 @@
+---
+---
+<div class="hamburger" id="hamburger-menu">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<script>
+  const hamburger = document.getElementById('hamburger-menu');
+  hamburger.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('expanded');
+  });
+</script>

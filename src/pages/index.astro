@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 const pageTitle = 'Life is Expensive'
 ---
-   <Layout>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+  <Layout>
+    <Header/>
       <h1>{pageTitle}</h1>
+    <Footer/>
   </Layout>
