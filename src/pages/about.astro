@@ -1,18 +1,15 @@
 ---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = 'About This Site'
+
+const goals = ["save", "invest", "retire"]
 ---
 
-<html lang="en>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width" />
-    <meta name="generator" content={Astro.generator}>
-    <title>Life is Expensive</title>
-  </head>
-    <body>
+<Layout>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
-    <h1>About this Site</h1>
-          <p>I was motivated to start this site to help people learn how to save and invest.</p>
-        </body>
-    </html>
+    <h1>{pageTitle}</h1>
+          <p>Do you find the topic of money to be intimidating? Well, it shouldn't be. I was motivated to start this blog to help people:<p>
+          {goals.map((goal) => <li> {goal} </li>)}
+</Layout>

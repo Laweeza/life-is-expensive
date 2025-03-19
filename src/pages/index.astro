@@ -1,17 +1,10 @@
 ---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = 'Life is Expensive'
 ---
-
-<html lang="en>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width" />
-    <meta name="generator" content={Astro.generator}>
-    <title>Life is Expensive</title>
-  </head>
+   <Layout>
   <a href="/">Home</a>
   <a href="/about/">About</a>
   <a href="/blog/">Blog</a>
-    <body>
-      <h1>Life is Expensive</h1>
-    </body>
-</html>
+      <h1>{pageTitle}</h1>
+  </Layout>

@@ -1,18 +1,16 @@
 ---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = 'Blog'
 ---
-
-<html lang="en>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width" />
-    <meta name="generator" content={Astro.generator}>
-    <title>Life is Expensive</title>
-  </head>
+<Layout>
   <a href="/">Home</a>
   <a href="/about/">About</a>
-  <a href="/blog/"></a>Blog
-    <body>
-      <h1>Blog</h1>
+  <a href="/blog/">Blog</a>
+      <h1>{pageTitle}</h1>
       <p>View articles here</p>
-    </body>
-</html>
+      <ul>
+        <li><a href="/posts/savings">Post 1</a></li>
+        <li><a href="/posts/retirement">Post 2</a></li>
+        <li><a href="/posts/cuttingcosts">Post 3</a></li>
+      <ul>
+ </Layout>
